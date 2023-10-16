@@ -39,10 +39,8 @@ supabase link --project-ref [project-id] --password [Database Password]
 > supabase 管理画面で追加した table を追加したい場合
 
 ```
-supabase db commit
+supabase db diff --file [migrate-file-name]
 ```
-
-supabase db commit [migrate-file-name]
 
 ```
 supabase migration list (違いを判別)
